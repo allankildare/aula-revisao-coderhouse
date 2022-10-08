@@ -1,0 +1,85 @@
+$bg-color: rgb(245, 245, 245);
+$menu-color: rgb(26, 26, 26);
+$menu-logo-color: rgb(218, 218, 218);
+$menu-link-color: #e6bd07;
+$bg-footer: rgb(37, 37, 37);
+$text-white-lighten: #e9e9e9;
+$text-white-light: #dcdcdc;
+
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    height: 10vh;
+    background-color: $menu-color;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menu__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1440px;
+        padding: 0 1rem;
+
+        .menu__logo {
+            color: $menu-logo-color;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .menu__navbar {
+            & > a, & > a:visited {
+                margin-left: 1rem;
+                color: $menu-link-color;
+            }
+        }
+    }
+}
+
+main {
+    min-height: 83vh;
+}
+
+.footer {
+    height: 7vh;
+    background-color: $bg-footer;
+    text-align: center;
+    padding-top: 8px;
+
+    .footer__rights {
+        font-size: 18px;
+    }
+    .rights--text-white-light {
+        color: $text-white-light;
+    }
+    .footer__author {
+        font-size: 14px;
+    }
+
+    .author--text-white-lighten {
+        color: $text-white-lighten;
+    }
+
+    .author--link, .author--link:visited {
+        color: rgb(169, 169, 169);
+        text-decoration: underline;
+    }
+}

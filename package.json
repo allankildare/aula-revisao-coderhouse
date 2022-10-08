@@ -1,0 +1,16 @@
+{
+  "name": "aula_extra",
+  "version": "1.0.0",
+  "description": "Uma revisão completa do curso da Coderhouse",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include scss scss/styles.scss styles/main.css",
+    "watch-scss": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Allan Kildare",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
